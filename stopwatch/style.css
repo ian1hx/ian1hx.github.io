@@ -19,7 +19,7 @@ body {
 }
 
 .buttonWrapper {
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,17 +27,16 @@ body {
 }
 
 .clock {
-  font-size: calc(22vmin - 10%);
+  font-size: 8em;
   line-height: 0;
   font-family: monospace;
 }
 button {
-  margin: 3vmin;
-  font-size: 5vmin;
+  font-size: 2em;
   border: 0;
-  padding: 5vmin;
+  padding: 1em;
   background: hsl(151, 67%, 72%);
-  border-radius: 2vmin;
+  border-radius: 0.5em;
   transition: border-radius 0.3s,
   background 0.1s,
   color 0.1s;
@@ -45,17 +44,13 @@ button {
 button:disabled {
   background: hsl(102, 18%, 86%);
 }
-button:hover {
+button:enabled:hover {
   cursor: pointer;
-  border-radius: 10vmin;
+  border-radius: 2em;
 }
 
 button:disabled:hover {
-  border-radius: 2vmin;
   cursor: not-allowed;
-  font-size: 5vmin;
-  padding: 5vmin;
-
 }
 button:active {
   background: hsl(113, 100%, 83%);
