@@ -15,10 +15,14 @@ header {
     background: hsla(78, 71%, 3%, 70%);
     color: hsl(80, 41%, 89%);
     line-height: 2;
+    padding: 10px;
 }
-.headerText {
+
+@media screen and (min-width: 800px) {
+    .headerText {
     width: 50%;
     margin: 0 auto;
+}
 }
 
 h1 {
@@ -39,7 +43,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 2em;
-    align-items: baseline;
 }
 
 article {
@@ -47,7 +50,7 @@ article {
 }
 
 img {
-    height: 100%;
+    object-fit: cover;
     width: 100%;
     border-radius: 2em;
     /*filter: brightness(75%);*/
