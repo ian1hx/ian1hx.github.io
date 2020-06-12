@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif, 'Noto Sans TC';
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background: hsla(78, 71%, 3%, 70%);
+    color: hsl(80, 41%, 89%);
+    line-height: 2;
+}
+.headerText {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2em;
+    align-items: baseline;
+}
+
+article {
+    position: relative;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2em;
+    /*filter: brightness(75%);*/
+    transition: border-radius 0.1s;
+}
+
+article h3 {
+    background: hsla(82, 19%, 72%, 50%);
+    border-radius: 2em;
+    color: black;
+    transition: background 0.1s;
+}
+
+article:hover img {
+    border-radius: 0.5em;
+    filter: none;
+    cursor: pointer;
+}
+
+article:hover h3 {
+    cursor: pointer;
+    background: hsl(0, 0%, 100%, 70%);
+}
+
+article:active img {
+    filter: brightness(110%);
+}
+
+
+
+
+.grid h3 {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
