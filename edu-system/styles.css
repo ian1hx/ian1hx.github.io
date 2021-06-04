@@ -1,3 +1,22 @@
-li:hover {
-    background-color: lightgreen;
+body {
+    color: #333333;
+    margin: 0 auto;
+    width: 70%;
+    line-height: 2;
+}
+
+li:hover::marker {
+    color: red;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+article{
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: gray solid 1px;
+    border-radius: 10px;
 }
