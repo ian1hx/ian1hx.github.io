@@ -1,67 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-Hant-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>教務系統需求</title>
-    <link rel="stylesheet" href="requirements.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap" rel="stylesheet">
+    <title>伊恩練功室</title>
 </head>
-
 <body>
-    <h1>教務系統需求</h1>
-    <article>
-        <h2>通用</h2>
-        <ol>
-            <li>會員可以登入、登出。</li>
-            <li>忘記密碼時可以由 email 寄送重設密碼連結。</li>
-        </ol>
-    </article>
-    <article>
-        <h2>學生</h2>
-        <ol>
-            <li>可查看自己的學藉資料。</li>
-            <li>可以看到同班同學名單、聯絡資料（？）</li>
-            <li>行事曆可以看到課表與自習教室可預約時間，如此一來就不用來回對照課表與 google calendar。</li>
-            <li>自動排值日生，並由系統提醒今日值日生是誰，如有請假等事由可與明天的值日生對調，如此一來學生就不用自己記值日生輪到誰。</li>
-            <li>值日生能夠填寫班級日誌，日誌填寫介面會根據課表、填表當下時間自動帶入老師名稱和課程名稱，降低手動輸入的錯誤。</li>
-            <li>能夠填寫證明文件申請表，查看自己申請進度、申請記錄。</li>
-            <li>能夠填寫電腦設備異常維修表，查看自己維修進度、維修記錄。</li>
-            <li>能夠填寫物品借用申請單，可查看自己申請結果、借用記錄。</li>
-            <li>能夠在系統請假，查看自己申請進度、申請記錄。</li>
-            <li>在Line收到行政人員與班導師的公告、值日生提醒。</li>
-            <li>可在系統交作業（以上傳檔案的方式），並看到自己交過的作業、分數。</li>
-        </ol>
-    </article>
-    <article>
-        <h2>行政人員</h2>
-        <ol>
-            <li>可以執行「班級」CRUD</li>
-            <li>可以執行「學生資料」CRUD</li>
-            <li>在行事曆可更動課表，並即時以Line自動通知學生課表更動。</li>
-            <li>能夠在系統張貼公告，並即時以Line自動通知學生有新公告。</li>
-            <li>可以查看學生填寫的教室日誌。</li>
-            <li>證明文件申請表、電腦設備異維修表、物品借用申請單、請假單、課表異動單、作業申請單
-                <ol>
-                    <li>查詢所有人的表單記錄。</li>
-                    <li>能夠核准、拒絕證明表單。</li>
-                    <li>能夠填寫核准進度。</li>
-                    <li>能夠填寫拒絕原因。</li>
-                </ol>
-            </li>
-        </ol>
-    </article>
-    <article>
-        <h2>授課老師</h2>
-        <ol>
-            <li>在行事曆上可申請課表異動，可查詢異動結果、異動記錄。</li>
-            <li>能夠在系統張貼公告，並即時以Line自動通知學生有新公告。</li>
-            <li>可以查看學生填寫的教室日誌。</li>
-            <li>可向行政人員申請出作業，可以填寫作業標題、內容、期限。</li>
-            <li>可以看到所有學生的作業，並對作業評分。</li>
-        </ol>
-    </article>
-</body>
+    <header>
+        <div class="headerText">
+            <h1>伊恩練功室</h1>
+            <p>一些我的筆記和 Projects</p>
+        </div>
+    </header>
 
+    <main>
+        <section>
+            <h2>Projects:</h2>
+            <div class="grid">
+                <article>
+                    <a href="/stopwatch/">
+                        <h3>計時器</h3>
+                        <img src="/stopwatch/stopwatch-preview.png" alt="計時器網頁截圖">
+                    </a>
+                </article>
+
+                <article>
+                    <a href="#">
+                        <h3>空無一物</h3>
+                        <img src="https://picsum.photos/300/400?random=1" alt="尋找帥哥服務截圖">
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <h3>空無一物</h3>
+                        <img src="https://picsum.photos/300/400?random=2" alt="UberFucks網頁截圖">
+                    </a>
+                    
+                </article>
+            </div>
+
+        </section>
+    </main>
+
+</body>
 </html>
