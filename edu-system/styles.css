@@ -5,10 +5,6 @@ body {
     line-height: 2;
 }
 
-li:hover::marker {
-    color: red;
-}
-
 h1, h2 {
     text-align: center;
 }
