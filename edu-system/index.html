@@ -14,91 +14,90 @@
     <article>
         <h2>通用</h2>
         <ol>
-            <li>會員可以登入、登出。</li>
-            <li>忘記密碼時可以由 email 寄送重設密碼連結。</li>
-            <li>各個課程底下有討論區（留言版），會員可以發文、回覆、按讚（打心）。</li>
+            <li><input type="checkbox">會員可以登入、登出。忘記密碼時可以由 email 寄送重設密碼連結。</li>
+            <li><input type="checkbox">各個課程底下有討論區（留言版），會員可以發文、回覆、按讚（打心）。</li>
         </ol>
     </article>
     <article>
         <h2>學生</h2>
         <ol>
-            <li>可查看自己的學藉資料。</li>
-            <li>可以看到同班同學名單、聯絡資料。</li>
-            <li>行事曆，將目前分散的 google sheets 整合在一起
+            <li><input type="checkbox">可查看自己的學藉資料。</li>
+            <li><input type="checkbox">可以看到同班同學名單、聯絡資料。</li>
+            <li><input type="checkbox">行事曆，將目前分散的 google sheets 整合在一起
                 <ol>
-                    <li>可以看到課表。</li>
-                    <li>點選課程可連結至課程面頁。</li>
-                    <li>可以看到自習教室可預約時間、已登記人數。</li>
-                    <li>可以在行事曆點選某個可預約時段，連結至預約自習教室頁面，並自動帶入所選時段及教室。</li>
-                    <li>有 filter 可以決定要不要看到課程或教室可預約時間</li>
+                    <li><input type="checkbox">可以看到課表。</li>
+                    <li><input type="checkbox">點選課程可連結至課程面頁。</li>
+                    <li><input type="checkbox">可以看到自習教室可預約時間、已登記人數。</li>
+                    <li><input type="checkbox">可以在行事曆點選某個可預約時段，連結至預約自習教室頁面，並自動帶入所選時段及教室。</li>
+                    <li><input type="checkbox">有 filter 可以決定要不要看到課程或教室可預約時間</li>
                 </ol>
             </li>
-            <li>有值日生系統，不會忘記值日生輪到幾號
+            <li><input type="checkbox">有值日生系統，不會忘記值日生輪到幾號
                 <ol>
-                    <li>系統預設自動按照學號排值日生，一天一位。</li>
-                    <li>方案A
+                    <li><input type="checkbox">系統預設自動按照學號排值日生，一天一位。</li>
+                    <li><input type="checkbox">方案A
                         <ol>
-                            <li>可由班代、行政人員、老師異動值日生</li>
+                            <li><input type="checkbox">可由班代、行政人員、老師異動值日生</li>
                         </ol>
                     </li>
-                    <li>方案B（綁請假系統）
+                    <li><input type="checkbox">方案B（綁請假系統）
                         <ol>
-                            <li>如當天值日生請假，自動與明天的值日生對調。</li>
-                            <li>就算當天值日生沒有請假，值日生也可以向其他學生提出交換值日生邀請。</li>
-                            <li>非值日生的學生可以拒絕或接受交換值日生邀請。</li>
+                            <li><input type="checkbox">如當天值日生請假，自動與明天的值日生對調。</li>
+                            <li><input type="checkbox">就算當天值日生沒有請假，值日生也可以向其他學生提出交換值日生邀請。</li>
+                            <li><input type="checkbox">非值日生的學生可以拒絕或接受交換值日生邀請。</li>
                         </ol>
                     </li>
-                    <li>值日生會收到填寫班級日誌的提醒（綁 Line 通知）。</li>
+                    <li><input type="checkbox">值日生會收到填寫班級日誌的提醒（綁 Line 通知）。</li>
                 </ol>
             </li>
-            <li>班級日誌可以針對填寫者身份、當下時間自動帶入課程資訊，自動帶入的資訊也可手動做調整，配合臨時的各種情況。</li>
-            <li>能夠在課後填寫滿意度調查，可選擇具名或匿名。</li>
-            <li>證明文件申請表、電腦設備異維修表、物品借用申請單、請假單
+            <li><input type="checkbox">班級日誌可以針對填寫者身份、當下時間自動帶入課程資訊，自動帶入的資訊也可手動做調整，配合臨時的各種情況。</li>
+            <li><input type="checkbox">能夠在課後填寫滿意度調查，可選擇具名或匿名。</li>
+            <li><input type="checkbox">證明文件申請表、電腦設備異維修表、物品借用申請單、請假單
                 <ol>
-                    <li>填寫新的表單</li>
-                    <li>取消尚未被核准或拒絕的表單</li>
-                    <li>查詢自已的表單記錄（含結果）</li>
+                    <li><input type="checkbox">填寫新的表單</li>
+                    <li><input type="checkbox">取消尚未被核准或拒絕的表單</li>
+                    <li><input type="checkbox">查詢自已的表單記錄（含結果）</li>
                 </ol>
             </li>
-            <li>在Line收到行政人員與班導師的公告、值日生提醒。</li>
-            <li>可在系統交作業（以上傳檔案的方式），並看到自己交過的作業、分數。</li>
-            <li>有學習影音平台，學生可以直接在此系統觀看錄製好的教學影片（串 Tibame 現有的影音平台）。</li>
-            <li>能夠打卡，可以查詢自已的出缺席記錄，缺席次數過高會以 Line 或 Email 等方式提醒學生（列為關愛對象）。</li>
+            <li><input type="checkbox">在Line收到行政人員與班導師的公告、值日生提醒。</li>
+            <li><input type="checkbox">可在系統交作業（以上傳檔案的方式），並看到自己交過的作業、分數。</li>
+            <li><input type="checkbox">有學習影音平台，學生可以直接在此系統觀看錄製好的教學影片（串 Tibame 現有的影音平台）。</li>
+            <li><input type="checkbox">能夠打卡，可以查詢自已的出缺席記錄，缺席次數過高會以 Line 或 Email 等方式提醒學生（列為關愛對象）。</li>
         </ol>
     </article>
     <article>
         <h2>行政人員</h2>
         <ol>
-            <li>可以執行「班級」CRUD</li>
-            <li>可以執行「學生資料」CRUD</li>
-            <li>排課系統
+            <li><input type="checkbox">可以執行「班級」CRUD</li>
+            <li><input type="checkbox">可以執行「學生資料」CRUD</li>
+            <li><input type="checkbox">排課系統
                 <ol>
-                    <li>可以執行「課程」CRUD</li>
-                    <li>可更動課表（在行事曆或排課頁面），並即時以 Line 或 Email 等方式通知學生課表更動。</li>
-                    <li>假定每堂課時數固定，排課當下可以馬上知道目前某堂課時數不足、剛好、超過（可能以不同顏色加以區別）</li>
+                    <li><input type="checkbox">可以執行「課程」CRUD</li>
+                    <li><input type="checkbox">可更動課表（在行事曆或排課頁面），並即時以 Line 或 Email 等方式通知學生課表更動。</li>
+                    <li><input type="checkbox">假定每堂課時數固定，排課當下可以馬上知道目前某堂課時數不足、剛好、超過（可能以不同顏色加以區別）</li>
                 </ol>
             </li>
-            <li>能夠在系統張貼公告，並即時以Line自動通知學生有新公告。</li>
-            <li>可以查看學生填寫的教室日誌。</li>
-            <li>證明文件申請表、電腦設備異維修表、物品借用申請單、請假單、課表異動單、作業申請單
+            <li><input type="checkbox">能夠在系統張貼公告，並即時以Line自動通知學生有新公告。</li>
+            <li><input type="checkbox">可以查看學生填寫的教室日誌。</li>
+            <li><input type="checkbox">證明文件申請表、電腦設備異維修表、物品借用申請單、請假單、課表異動單、作業申請單
                 <ol>
-                    <li>查詢所有人的表單記錄。</li>
-                    <li>能夠核准、拒絕證明表單。</li>
-                    <li>能夠填寫核准進度。</li>
-                    <li>能夠填寫拒絕原因。</li>
+                    <li><input type="checkbox">查詢所有人的表單記錄。</li>
+                    <li><input type="checkbox">能夠核准、拒絕證明表單。</li>
+                    <li><input type="checkbox">能夠填寫核准進度。</li>
+                    <li><input type="checkbox">能夠填寫拒絕原因。</li>
                 </ol>
             </li>
-            <li>可以填寫、查詢人員進出記錄。</li>
+            <li><input type="checkbox">可以填寫、查詢人員進出記錄。</li>
         </ol>
     </article>
     <article>
         <h2>授課老師</h2>
         <ol>
-            <li>在行事曆上可申請課表異動，可查詢異動結果、異動記錄。</li>
-            <li>能夠在系統張貼公告，並即時以Line自動通知學生有新公告。</li>
-            <li>可以查看學生填寫的教室日誌。</li>
-            <li>可向行政人員申請出作業，可以填寫作業標題、內容、期限。</li>
-            <li>可以看到所有學生的作業，並對作業評分。</li>
+            <li><input type="checkbox">在行事曆上可申請課表異動，可查詢異動結果、異動記錄。</li>
+            <li><input type="checkbox">能夠在系統張貼公告，並即時以Line自動通知學生有新公告。</li>
+            <li><input type="checkbox">可以查看學生填寫的教室日誌。</li>
+            <li><input type="checkbox">可向行政人員申請出作業，可以填寫作業標題、內容、期限。</li>
+            <li><input type="checkbox">可以看到所有學生的作業，並對作業評分。</li>
         </ol>
     </article>
 </body>
