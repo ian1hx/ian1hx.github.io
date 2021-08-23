@@ -1,0 +1,207 @@
+html {
+    font-family: "Taipei Sans TC Beta", sans-serif;
+}
+.header-container,
+.footer-container,
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul,
+.bio p {
+    padding: 0 2rem;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+}
+
+header .header-container {
+    display: grid;
+    grid-template-columns: 6fr 2fr 3fr;
+}
+header img{
+    width: 130px;
+    height: 130px;
+    border: 3px gray solid;
+    border-radius: 100%;
+    justify-self: self-end;
+    align-self: center;
+}
+
+.learning {
+    grid-area: learning;
+    display: grid;
+}
+
+.working {
+    grid-area: working;
+    display: grid;
+}
+
+.skill {
+    grid-area: skill;
+}
+
+.project {
+    grid-area: project;
+}
+
+.bio{
+    grid-area: bio;
+    display: grid;
+}
+
+.learning ul,
+.working ul,
+.skill ul,
+.project ul,
+.bio div{
+    border-left: 3px skyblue solid;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+        "skill  skill"
+        "project project"
+        "learning  working"
+        "bio bio"
+        ;
+    grid-column-gap: 1rem;
+    line-height: 1;
+}
+
+h3{
+    font-size: medium;
+    font-weight: bolder;
+}
+
+p{
+    font-size: small;
+    line-height: 1.5rem;
+}
+
+.info li,
+.learning h2,
+.working h2,
+.skill h2,
+.project h2,
+.bio h2 {
+    position: relative;
+}
+
+.info li::before,
+.learning h2::before,
+.working h2::before,
+.skill h2::before,
+.project h2::before,
+.bio h2::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    left: -2rem;
+    top: 0px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.info {
+    align-self: flex-end;
+}
+.info li {
+    line-height: 1.5;
+}
+.info li::before {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.info .email::before {
+    background-image: url("https://img.icons8.com/ios/50/ffffff/new-post.png");
+}
+
+.info .mobile::before {
+    background-image: url("https://img.icons8.com/ios-glyphs/30/ffffff/iphone.png");
+}
+
+.learning h2::before {
+    background-image: url("https://img.icons8.com/ios/50/000000/school.png");
+}
+
+.working h2::before {
+    background-image: url("https://img.icons8.com/ios/50/000000/business.png");
+}
+
+.skill h2::before {
+    background-image: url("https://img.icons8.com/ios/50/000000/job.png");
+}
+
+.project h2::before {
+    background-image: url("https://img.icons8.com/ios/50/000000/create.png");
+}
+
+.bio h2::before {
+    background-image: url("https://img.icons8.com/pastel-glyph/50/000000/person-male--v1.png");
+}
+
+
+.learning p,
+.working p {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.skill ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* text-align: center; */
+    grid-column-gap: 1rem;
+}
+
+.project ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+}
+
+/* .project p:first-of-type {
+    font-size: xx-small;
+} */
+
+footer {
+    color: lightgrey;
+    margin-top: 5rem;
+    height: 10rem;
+    display: grid;
+}
+
+footer a {
+    color: skyblue;
+}
+
+.footer-container {
+    text-align: center;
+    align-self: center;
+}
+
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+
+    .header-container,
+    .footer-container,
+    main {
+        width: 90%;
+    }
+}
